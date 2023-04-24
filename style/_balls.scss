@@ -1,0 +1,53 @@
+@mixin flexCenter($justify_content, $flex_direction) {
+    display: flex;
+    justify-content: $justify_content;
+    align-items: center;
+    flex-direction: $flex_direction;
+}
+
+.bola1{
+    @include flexCenter(center, row);
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    background-color: $primaryColor;
+
+    a{
+        color: $neutralColor;
+    }
+
+    &:hover{
+        background-color: $neutralColor;
+
+        a{
+            color: $primaryColor;
+        }
+    }
+}
+.bola2{
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    background-color: $secondaryColor;
+
+    &:hover{
+        background-color: $neutralColor;
+    }
+
+}
+.bola3{
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    background-color: $thirdColor;
+
+    &:hover{
+        background-color: $neutralColor;
+    }
+}
